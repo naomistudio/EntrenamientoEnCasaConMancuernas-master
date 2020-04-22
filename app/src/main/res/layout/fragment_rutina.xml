@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.RutinaFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_all_exersice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TODOS LOS EJERCICIOS"
+            android:layout_margin="10dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/border_rectangle_buttom"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rutinas"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            android:background="@color/colorPrimary"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/viewRutinaAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="36dp"
+                android:text="Añadir ruitnas de entrenamiento" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@android:color/white"
+                android:text="No tienes rutinas programadas para esta semana"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/buttonIdComenzarRutina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Comenzar"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center"
+                android:background="@android:color/holo_green_dark"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="16dp"
+                android:text=" !!!Vamos Arriba¡¡¡Empieza el Lunes entrenando Biceps y Pechos con nuestra serie de ejercicios"
+                android:layout_marginBottom="16dp"/>
+        </android.support.v7.widget.LinearLayoutCompat>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_rutinas"
+            android:name="com.naomi.estudio.sa.design.by.osniel.app.mancuernasencasa.fragment.RutinaFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarSize="5dp"
+            android:paddingBottom="56dp"
+            android:scrollbarThumbVertical="@color/colorAccent"
+            android:scrollbars="vertical"
+            app:layoutManager="LinearLayoutManager"
+            tools:context=".activity.MancuernasEnCasaActivity"
+            tools:listitem="@layout/item_rutina" />
+    </LinearLayout>
+
+
+
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Sin Rutinas"
+        android:textColor="@android:color/darker_gray"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

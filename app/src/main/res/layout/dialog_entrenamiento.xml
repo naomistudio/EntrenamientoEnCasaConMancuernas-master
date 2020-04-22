@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".fragment.DialogFragmentEntrenamiento"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="146dp"
+        android:background="@drawable/border_only_top">
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/dialog_image"
+            android:layout_width="126dp"
+            android:layout_height="126dp"
+            android:layout_gravity="center"
+            android:src="@drawable/img_pecho_exercise" />
+    </FrameLayout>
+
+    <ScrollView
+        android:id="@+id/cuerpo"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="256dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/white"
+                android:text="Flexiones de Biceps Inclinados Alternados" />
+
+            <TextView
+                android:id="@+id/contenido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textSize="16sp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/white"
+                android:text="wjdfnñ wfjowif wifjqwoeifj jhglk
+            jfwowijfowi fowijfowj jkhkjh kjhkljh kjhkjh kjh kjhkjh kjh kjhjkh kjhkjh kjhk k ljhkljh kjhkljhkljh kjhkljh kjh  "/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center"
+        android:background="@color/colorPrimaryDark">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:id="@+id/bClose"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_close"
+            android:background="@android:color/transparent"
+            android:contentDescription="TODO" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/aceptar"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_first_page"
+            android:background="@drawable/dialog_button_style" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tv_dialog_pos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white"
+            android:text="20"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_dialog_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:text="/20"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/cancelar"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_last_page"
+            android:background="@drawable/dialog_button_style"
+            android:contentDescription="TODO" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:id="@+id/bLike"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_favorite_border"
+            android:background="@android:color/transparent"
+            android:contentDescription="TODO" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_mancuernas_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.MancuernasEnCasaActivity"
+    tools:showIn="@layout/activity_mancuernas_en_casa">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/rutinacrearGone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="36dp"
+            android:text="Añadir ruitnas de entrenamiento" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:text="No tienes rutinas programadas para esta semana"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/buttonIdComenzarRutina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comenzar"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:background="@drawable/border_bottom"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"
+            android:text=" !!!Vamos Arriba¡¡¡Empieza el Lunes entrenando Biceps y Pechos con nuestra serie de ejercicios"
+            android:layout_marginBottom="16dp"/>
+    </android.support.v7.widget.LinearLayoutCompat>
+</FrameLayout>

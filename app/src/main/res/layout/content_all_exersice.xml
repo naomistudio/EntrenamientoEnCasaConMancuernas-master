@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rv_all_exercise"
+    android:name="com.naomi.estudio.sa.design.by.osniel.app.mancuernasencasa.activity.ExerciseActivityDevelop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarSize="5dp"
+    android:background="@color/colorDarkerGray"
+    android:scrollbarThumbVertical="@color/colorAccent"
+    android:scrollbars="vertical"
+    app:layoutManager="LinearLayoutManager"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.AllExersiceActivity"
+    tools:listitem="@layout/item_exersice" />
